@@ -1,0 +1,71 @@
+Q11: Write a program to input an integer and check whether it is even or odd using if–else.
+/*
+Sample Test Cases:
+Input 1:
+7
+Output 1:
+7 is odd
+Input 2:
+12
+Output 2:
+12 is even
+*/
+
+Code:
+#include <stdio.h>
+
+int main() {
+    int number;
+    
+    printf("Enter an integer: ");
+    scanf("%d", &number);
+
+    if (number % 2 == 0) {
+        printf("%d is even.\n", number);
+    } else {
+        printf("%d is odd.\n", number);
+    }
+
+    return 0;
+}
+
+
+
+Q12: Write a program to input an integer and check whether it is positive, negative or zero using nested if–else.
+/*
+Sample Test Cases:
+Input 1:
+-5
+Output 1:
+Negative
+Input 2:
+0
+Output 2:
+Zero
+Input 3:
+10
+Output 3:
+Positive
+*/
+
+Code:
+#include <stdio.h>
+
+int main() {
+    int number;
+
+    printf("Enter an integer: ");
+    scanf("%d", &number);
+
+    if (number >= 0) {
+        if (number == 0) {
+            printf("The number is zero.\n");
+        } else {
+            printf("The number is positive.\n");
+        }
+    } else {
+        printf("The number is negative.\n");
+    }
+
+    return 0;
+}
